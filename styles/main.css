@@ -26,6 +26,7 @@ header {
 
 .hero {
   font-size: 1.25rem;
+  min-height: 300px;
 }
 
 .btn {
