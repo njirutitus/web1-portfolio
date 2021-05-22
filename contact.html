@@ -35,63 +35,88 @@
       </div>
     </header>
     <main>
-      <form action="">
-        <p>
-          <label for="">Email *</label><br />
-          <input
-            type="email"
-            name="email"
-            id="email"
-            size="30"
-            placeholder="Your email"
-          />
-        </p>
-        <p>
-          <label for="">Name *</label><br />
-          <input
-            type="text"
-            name="name"
-            id="name"
-            size="30"
-            placeholder="Your name"
-          />
-        </p>
-        <p>
-          <label for="phone">Tel. </label>
-          <input type="tel" name="code" id="code" size="4" placeholder="+254" />
-          <input
-            type="tel"
-            name="phone"
-            id="phone"
-            size="10"
-            placeholder="07*********"
-          />
-        </p>
-        <p>
-          <label for="means">Preferred means: </label>
-          <input type="radio" name="contact" id="mobile" />Tel.
-          <input type="radio" name="contact" id="mail" />Email
-        </p>
-        <p>
-          <label for="product">Product*</label> <br />
-          <select name="product" id="product">
-            <option value="web">Web Application</option>
-            <option value="desktop">Desktop Application</option>
-            <option value="mobile">Mobile Application</option>
-          </select>
-        </p>
-        <p>
-          <label for="">Message * </label> <br />
-          <textarea name="message" id="message" cols="30" rows="10"> </textarea>
-        </p>
-        <p>
-          <input type="checkbox" name="offers" id="offers" />
-          <label for="offers">Subscribe to news and offers</label>
-        </p>
-        <p>
-          <input type="submit" value="Send Message" />
-        </p>
-      </form>
+      <div class="card box_shadow">
+        <img
+          src="./images/titus-removebg.png"
+          alt=""
+          width="100"
+          height="100"
+          class="shape"
+        />
+        <div class="card-header text-center"></div>
+        <div class="card-body">
+          <form action="">
+            <p>
+              <label for="">Email *</label><br />
+              <input
+                type="email"
+                name="email"
+                id="email"
+                size="30"
+                placeholder="Your email"
+                class="form-input"
+              />
+            </p>
+            <p>
+              <label for="">Name *</label><br />
+              <input
+                type="text"
+                name="name"
+                id="name"
+                size="30"
+                placeholder="Your name"
+                class="form-input"
+              />
+            </p>
+            <div class="row">
+              <label class="mr-3" for="phone">Tel. </label>
+              <input
+                type="tel"
+                name="code"
+                id="code"
+                size="4"
+                placeholder="+254"
+                class="form-input"
+              />
+              <input
+                type="tel"
+                name="phone"
+                id="phone"
+                size="10"
+                placeholder="07*********"
+                class="form-input ml-3"
+              />
+            </div>
+            <p>
+              <label for="means">Preferred means: </label>
+              <div class="row">
+                <input type="radio" name="contact" id="mobile" />Tel.
+                <input type="radio" name="contact" id="mail" />Email
+              </div>
+            </p>
+            <p>
+              <label for="product">Product*</label> <br />
+              <select name="product" id="product" class="form-input">
+                <option value="web">Web Application</option>
+                <option value="desktop">Desktop Application</option>
+                <option value="mobile">Mobile Application</option>
+              </select>
+            </p>
+            <p>
+              <label for="">Message * </label> <br />
+              <textarea name="message" id="message" rows="5" class="form-input">
+              </textarea>
+            </p>
+            <p>
+              <input type="checkbox" name="offers" id="offers" />
+              <label for="offers">Subscribe to news and offers</label>
+            </p>
+            <p>
+              <input class="btn" type="submit" value="Send Message" />
+            </p>
+          </form>
+        </div>
+      </div>
       <hr />
     </main>
     <footer>
@@ -107,7 +132,9 @@
           ><i class="fab fa-linkedin-in fa-2x"></i
         ></a>
       </div>
-      <p>&copy; 2021. All rights reserved. &trade;Titus Njiru</p>
+      <p class="text-center">
+        &copy; 2021. All rights reserved. &trade;Titus Njiru
+      </p>
     </footer>
   </body>
 </html>

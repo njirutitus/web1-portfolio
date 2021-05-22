@@ -30,11 +30,12 @@ header {
 }
 
 .btn {
-  height: 50px;
-  width: 100px;
+  height: 25px;
   color: #fff;
   background-color: #003d00;
   vertical-align: center;
+  border-radius: 0.5rem;
+  cursor: pointer;
 }
 
 a {
@@ -76,6 +77,9 @@ main {
   margin: 0 auto;
   position: relative;
   min-height: 30vh;
+  /* display: flex; */
+  align-items: center;
+  justify-content: center;
 }
 
 .container {
@@ -105,8 +109,17 @@ main {
   margin-bottom: 15px;
 }
 
+.ml-3,
+.mr-3 {
+  margin-left: 0.5rem;
+}
+
 .box_shadow {
   box-shadow: 0px 0px 8px 2px #444;
+}
+
+.text-center {
+  text-align: center;
 }
 
 footer {
@@ -124,6 +137,43 @@ footer {
   margin-top: 15px;
 }
 
-footer p {
-  text-align: center;
+.card {
+  /* border: 2px solid brown; */
+  padding: 2rem;
+  width: 500px;
+  background: rgba(225, 255, 177, 0.7);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  margin-left: auto;
+  margin-right: auto;
+}
+.card-header {
+  z-index: 2;
+}
+.form-input {
+  width: 100%;
+  min-height: 2rem;
+  margin-top: 1em;
+  padding: 0.15rem 0.25rem;
+  border-radius: 0.25rem;
+  background: hsl(210, 36%, 96%);
+  font-size: 1em;
+  border-color: transparent;
+}
+
+.form-input:focus {
+  outline: none !important;
+  border-color: transparent;
+  box-shadow: 0px 0px 8px 2px #444;
+}
+
+label {
+  font-size: 1em;
+  margin-top: 1em;
+}
+
+.shape {
+  position: absolute;
+  top: -2.5rem;
+  right: 0.5rem;
 }
