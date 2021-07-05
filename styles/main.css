@@ -145,8 +145,11 @@ main {
 
 .social {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
+  position: fixed;
+  top: 50%;
+  left: 20px;
 }
 
 .social a {
