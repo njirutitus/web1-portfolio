@@ -172,7 +172,7 @@ main {
 .box {
   /* border: 2px solid brown; */
   padding: 2rem;
-  width: 500px;
+  max-width: 500px;
   background: rgba(225, 255, 177, 0.3);
   -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
