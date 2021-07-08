@@ -69,6 +69,10 @@ a {
   text-align: center;
 }
 
+.table-responsive {
+  overflow-x: scroll;
+}
+
 .table-bordered {
   border: #003d00 1px solid;
   border-collapse: collapse;
@@ -254,16 +258,42 @@ a:hover {
   }
 } */
 
+.hide {
+  display: none;
+}
+
+.show {
+  display: flex;
+}
+
 @media screen and (max-width: 776px) {
+  .social {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    top: 0;
+  }
+  .navbar {
+    align-items: flex-start;
+  }
   .navbar-collapse {
+    position: absolute;
     display: none;
     flex-direction: column;
     padding: 0.5rem;
     border: 1px solid #555b61;
     background-color: #7f9664;
+    margin-top: -5px;
+    right: 0;
+    padding-top: 2em;
   }
   .navbar-toggler {
+    z-index: 2;
+    position: absolute;
+    right: 0.5em;
     display: block;
+    transition: all 1s ease-out;
   }
   .hero {
     flex-direction: column-reverse;
