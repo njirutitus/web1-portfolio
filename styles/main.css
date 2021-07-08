@@ -8,6 +8,7 @@ body {
   background-color: #c5e1a5;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  margin: 0;
 }
 
 .navbar {
@@ -22,7 +23,13 @@ body {
   margin: 0;
   position: sticky;
   top: 0;
-  z-index: 9999;
+  background-color: #c2cab8;
+  z-index: 1;
+}
+
+.navbar-toggler {
+  border-color: transparent;
+  display: none;
 }
 
 .hero {
@@ -45,6 +52,7 @@ body {
   vertical-align: center;
   border-radius: 0.5rem;
   cursor: pointer;
+  padding: 0.5rem;
 }
 
 a {
@@ -70,10 +78,10 @@ a {
   padding: 0.25rem;
 }
 
-.navbar a:hover {
+/* .navbar a:hover {
   background-color: #003d00;
   color: #fff;
-}
+} */
 
 .active {
   background-color: #003d00;
@@ -148,8 +156,8 @@ main {
   flex-direction: column;
   justify-content: center;
   position: fixed;
-  top: 50%;
-  left: 20px;
+  top: 40vh;
+  left: 0;
 }
 
 .social a {
@@ -212,4 +220,52 @@ label {
   /* Take available height */
   padding: 5px;
   flex: 1;
+}
+
+.b {
+  border: 1px solid #555b61;
+}
+
+a {
+  /* transition: background-color 0.5s, color 0.5s transform 2s; */
+  transition: all 1s ease-out;
+}
+
+a:hover {
+  /* animation-duration: 3s;
+  animation-name: slidein; */
+  background-color: #003d00;
+  color: #fff;
+  /* transform: rotate(270deg); */
+}
+
+.social p {
+  transform: rotate(90deg);
+}
+
+/* @keyframes slidein {
+  from {
+    background-color: #c2cab8;
+  }
+
+  to {
+    background-color: #003d00;
+    color: #fff;
+  }
+} */
+
+@media screen and (max-width: 776px) {
+  .navbar-collapse {
+    display: none;
+    flex-direction: column;
+    padding: 0.5rem;
+    border: 1px solid #555b61;
+    background-color: #7f9664;
+  }
+  .navbar-toggler {
+    display: block;
+  }
+  .hero {
+    flex-direction: column-reverse;
+  }
 }
