@@ -294,6 +294,11 @@ a:hover {
     right: 0;
     padding-top: 2em;
   }
+
+  .navbar-collapse a {
+    color: #091101;
+  }
+
   .navbar-toggler {
     z-index: 2;
     position: absolute;
