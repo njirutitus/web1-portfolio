@@ -22,14 +22,16 @@ body {
   justify-content: space-between;
   margin: 0;
   position: sticky;
-  top: 0;
+  /* top: 0; */
   background-color: #c2cab8;
   z-index: 1;
+  box-shadow: #003d00 0 0 5px 0;
 }
 
 .navbar-toggler {
   border-color: transparent;
   display: none;
+  margin-right: 0;
 }
 
 .hero {
@@ -265,6 +267,10 @@ a:hover {
 .show {
   display: flex;
 }
+.animated {
+  overflow: hidden;
+  height: calc(1fr - var(--lottie-player-toolbar-height));
+}
 
 @media screen and (max-width: 776px) {
   .social {
@@ -291,7 +297,7 @@ a:hover {
   .navbar-toggler {
     z-index: 2;
     position: absolute;
-    right: 0.5em;
+    right: 1em;
     display: block;
     transition: all 1s ease-out;
   }
